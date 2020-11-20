@@ -1,0 +1,169 @@
+body {font-family: Arial, Helvetica, sans-serif;}
+
+.navbar {
+  width: 100%;
+  background-color: #555;
+  overflow: auto;
+}
+
+.navbar a {
+  float: left;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+}
+.navbar p {
+  float: right;
+  margin-right: 20px;
+  font-size: 13px;
+  color: white;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  background-color: #000;
+}
+
+.active {
+  background-color: #f1b30a;
+}
+
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
+}
+.sidebar {
+  height: 100%;
+  width: 55px;
+  position: fixed;
+  z-index: 1;
+  top: 30;
+  left: 0;
+  background-color: rgb(34, 31, 31);
+  overflow-x: hidden;
+  padding-top: 16px;
+}
+
+.sidebar a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+  margin-bottom: 150px;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.main {
+  width: 90%;
+  margin-left: 100px;
+}
+
+@media screen and (max-width: 768px){
+    .main { padding: 0px 10px; margin-left: 38px;}
+    .sidebar {left: 0;}
+}
+
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+.mine{
+  color: rgb(255, 213, 0);
+  font-weight: bolder;
+}
+html{
+  background-color: #020227;
+}
+.one{
+  color: rgb(233, 89, 37);
+}
+.two{
+  color: red;
+}
+#videoContent{
+  margin-top: 50px;
+}
+.slack{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 85%;
+  flex-direction: column;
+  margin-top: 100px;
+}
+
+@media screen and (max-width: 768px){
+  .slack {width: 100%;}
+}
+
+.slackButton{
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-size: 25px;
+  color: white;
+  background-color: rgb(5, 155, 155);
+  outline: 0;
+  border: 0;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-bottom: 40px;
+}
+
+@media screen and (max-width: 768px){
+  .slackButton {
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 18px;
+  }
+}
+
+
+input[type=text], select, textarea {
+  width: 90%;
+  padding: 12px;
+  border: 1px solid rgb(15, 208, 214);
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4d043d;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #911175;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #46b0be;
+  padding: 20px;
+  width: 80%;
+  margin-top: 100px;
+}
+@media screen and (max-width: 768px){
+  .container {margin-left: 23px;}
+}
+#payment{
+  margin-top: 300px;
+}
+#chatContext{
+  background-color: rgb(5, 10, 17);
+}

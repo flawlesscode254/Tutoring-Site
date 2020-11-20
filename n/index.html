@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Firebase Hosted Site</title>
+
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/8.0.0/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/8.0.0/firebase-auth.js"></script>
+    <script defer src="/__/firebase/8.0.0/firebase-database.js"></script>
+    <script defer src="/__/firebase/8.0.0/firebase-messaging.js"></script>
+    <script defer src="/__/firebase/8.0.0/firebase-storage.js"></script>
+    <script defer src="/__/firebase/8.0.0/firebase-analytics.js"></script>
+    <script defer src="/__/firebase/8.0.0/firebase-remote-config.js"></script>
+    <script defer src="/__/firebase/8.0.0/firebase-firestore.js"></script>
+    <!-- initialize the SDK after all desired features are loaded -->
+    <script defer src="/__/firebase/init.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+
+  </head>
+  <body>
+    <div class="navbar">
+      <a class="active" href="#" class="tablinks" onclick="openCity(event, 'content')"><i class="fa fa-fw fa-home"></i> Home</a>  
+      <a href="#" onclick="openCity(event, 'payment')" class="tablinks"><i class="fa fa-fw fa-user"></i> <span class="mine">Upgrade to PRO</span></a>
+    </div>
+    <div class="sidebar">
+      <a href="#" onclick="openCity(event, 'content')" id="defaultOpen" class="tablinks"><i class="fa fa-fw fa-home"></i></a>
+      <a href="#" onclick="openCity(event, 'newContent')" class="tablinks"><i class="fa fa-picture-o" aria-hidden="true"></i></a>
+      <a href="#" class="tablinks" onclick="openCity(event, 'videoContent')"><i class="fa fa-fw fa-file"></i></a>
+      <a href="#" class="tablinks" onclick="openCity(event, 'chatContext')"><i class="fa fa-fw fa-comments"></i></a>
+    </div> 
+    <div class="main" id="newContent">
+      <p style="text-align: center; color:white; font-size: 25px;">
+        Simply <span class="one">Code It All</span> And Make <span class="two">Income</span></p>
+      <p style="color: orangered; font-family: sans-serif; font-size: 25px;">
+        Fully Reliant on <span style="color: orange;">Firebase</span></p>
+      <img src="one.png" alt="one" width="380">
+      <img src="two.png" alt="two" width="380">
+      <img src="three.png" alt="three" width="380">
+      <img src="four.png" alt="four" width="380">
+      <img src="five.png" alt="five" width="380">
+      <img src="six.png" alt="six" width="380">
+      <img src="seven.png" alt="seven" width="380">
+      <img src="eight.png" alt="eight" width="380">
+      <img src="nine.jpg" alt="nine" width="380">
+    </div>
+    <div class="main" id="content">
+      <p style="text-align: center; color:white; font-size: 25px;">
+        Simply <span class="one">Code It All</span> And Make <span class="two">Income</span></p>
+      
+      <p style="color: orangered; font-family: sans-serif; font-size: 25px;">
+        Full Stack Web <span style="color: orange;">Development</span></p>
+      <video id="video1" width="380" controls>
+        <source src="Github.mp4" type="video/mp4">
+      </video>
+
+      <video id="video1" width="380" controls>
+        <source src="Github.mp4" type="video/mp4">
+      </video>
+      
+      <video id="video1" width="380" controls>
+        <source src="Github.mp4" type="video/mp4">
+      </video>
+    
+      <video id="video1" width="380" controls>
+        <source src="Github.mp4" type="video/mp4">
+      </video>
+
+      <video id="video1" width="380" controls>
+        <source src="Github.mp4" type="video/mp4">
+      </video>
+
+      <video id="video1" width="380" controls>
+        <source src="Github.mp4" type="video/mp4">
+      </video>
+
+      <video id="video1" width="380" controls>
+        <source src="Github.mp4" type="video/mp4">
+      </video>
+
+      <video id="video1" width="380" controls>
+        <source src="Github.mp4" type="video/mp4">
+      </video>
+
+      <video id="video1" width="380" controls>
+        <source src="Github.mp4" type="video/mp4">
+      </video>
+
+    </div>
+    <div class="main" id="videoContent">
+      <p style="color: orangered; font-family: sans-serif; font-size: 25px;">
+        All the stuff to be used <span style="color: orange;">In The Course</span></p>
+        <img src="null-1.jpg" alt="html5" width="380">
+        <img src="creative-css3-tutorials.webp" alt="css3" width="380" height="190">
+        <img src="javascriptdd.jpg" alt="javascript" width="380" height="190">
+        <img src="logo-og.png" alt="react" width="380" height="190">
+        <img src="LARAVEL.png" alt="laravel" width="380" height="190">
+        <img src="github-banner-770x425.png" alt="github" width="380" height="190">
+        <img src="social.png" alt="firebase" width="380" height="190">
+        <img src="full_front_back.jpg" alt="frontend" width="380" height="190">
+        <img src="How_to_Become_a_Back_End_Developer.jpg" alt="backend" width="380" height="190">
+    </div>
+    <div class="main" id="chatContext">
+      <div class="slack">
+        <p style="color: orangered; font-family: sans-serif; font-size: 25px;">
+          Talk to <span style="color: orange;">Us</span>
+           and any <span style="color: orange;">Other Members</span><span style="color: orangered;"> In this course</span></p>
+        <img src="slack.png" alt="slack" width="350">
+        <a href="https://join.slack.com/t/codeitall/shared_invite/zt-it24xzpu-i5wji9_odBj7TAElXLxdgA"><button class="slackButton">Join Our Slack Community</button></a>
+      </div>
+    </div>
+    <div class="main" id="payment">
+      <p style="font-size: 25px;"><span style="color: orange;">Upgrade to PRO by paying a monthly fee of </span><span style="color: orangered;">$24</span></p>
+        <script src="https://www.paypal.com/sdk/js?client-id=sb"></script>
+        <script>paypal.Buttons().render(payment);</script>
+    </div>
+  <script src="script.js"></script>
+  </body>
+</html>
